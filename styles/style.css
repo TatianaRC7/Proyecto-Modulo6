@@ -1,5 +1,7 @@
 /* Estilos CSS para el formulario */
 body {
+    background-image:"imagenes/fondo_realista.png";
+            background-size: cover; /* Ajustar la imagen al tamao de la ventana del navegador */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5;
     color: #333;
@@ -8,7 +10,7 @@ body {
 }
 
 header, footer {
-    background-color: #4CAF50;
+    background-color: #10adb3;
     color: #fff;
     padding: 20px;
 }
@@ -66,7 +68,7 @@ select {
 
 input[type="submit"],
 input[type="button"] {
-    background-color: #4CAF50;
+    background-color: #059ca1;
     color: white;
     border: none;
     border-radius: 4px;
@@ -127,8 +129,9 @@ a{
     text-decoration: none;
 }
 .listado-servicios a {
-    color: #3e8e41;
+    color: #78ddf7;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .listado-servicios li::marker {
