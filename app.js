@@ -169,4 +169,31 @@ if (window.location.href.endsWith("registro-pacientes.html")) {
     localStorage.setItem("pacientes", JSON.stringify(pacientes));
     alert("Paciente registrado!");
   });
+
+  /* Banner Imagenes */
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+    
+   
+let currentIndex = 0;
+
+    prevButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+    });
+
+    nextButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+    });
+
+    function updateSlider() {
+        const translateX = -currentIndex * 100;
+        slider.style.transform = `translateX(${translateX}%)`;
+    }
+});
 }
