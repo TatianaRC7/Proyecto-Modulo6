@@ -6,19 +6,31 @@
     <title>Centro Medico Backend</title>
     <link rel="shortcut icon" href="imagenes/icono_salud.png" />
     <link rel="stylesheet" href="styles/style.css">
+    <script src="app.js" defer></script>
 </head>
-<body background="imagenes/fondo_realista.jpg">
+<body background="imagenes/912c6df16818e1496156527f26395904.jpg">
     <div class="fondo">
         <header>
             <h1>Centro medico Backend</h1>
         </header>
         <main class="listado-container">
             <ul class="listado-servicios">
-                <li><a href="html/registro-medicos.html">Registro medicos</a></li>
-                <li><a href="html/registro-pacientes.html">Registro pacientes</a></li>
-                <li><a href="html/listado-medicos.html">Listado medicos</a></li>
-                <li><a href="html/listado-pacientes.html">Listado pacientes</a></li>
+                <li><a href="html/registro-medicos.html" class="oval-button">Registro medicos</a></li>
+                <li><a href="html/registro-pacientes.html" class="oval-button">Registro pacientes</a></li>
+                <li><a href="html/listado-medicos.html" class="oval-button">Listado medicos</a></li>
+                <li><a href="html/listado-pacientes.html" class="oval-button">Listado pacientes</a></li>
             </ul>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" style="background-image: url('image1.jpg');"></div>
+                    <div class="slide" style="background-image: url('image2.jpg');"></div>
+                    <div class="slide" style="background-image: url('image3.jpg');"></div>
+            </div>
+                <button class="prev-button">Anterior</button>
+                <button class="next-button">Siguiente</button>
+            </div>
+
         </main>
         <footer>
             <h2>Realizado por: Tatiana Rozo</h2>
